@@ -1,0 +1,6 @@
+{
+  "name": "CivicGuard",
+  "description": "Civic Guard: Monitoraggio urbano e segnalazioni con sincronizzazione in tempo reale e archiviazione offline cache.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

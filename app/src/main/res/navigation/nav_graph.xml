@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/dashboardFragment">
+
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.example.ui.fragments.DashboardFragment"
+        android:label="Bacheca Segnalazioni">
+        <action
+            android:id="@+id/action_dashboard_to_newReport"
+            app:destination="@id/newReportFragment" />
+        <action
+            android:id="@+id/action_dashboard_to_settings"
+            app:destination="@id/settingsFragment" />
+        <action
+            android:id="@+id/action_dashboard_to_reportDetail"
+            app:destination="@id/reportDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/newReportFragment"
+        android:name="com.example.ui.fragments.NewReportFragment"
+        android:label="Nuova Segnalazione" />
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.ui.fragments.SettingsFragment"
+        android:label="Impostazioni Server" />
+
+    <fragment
+        android:id="@+id/reportDetailFragment"
+        android:name="com.example.ui.fragments.ReportDetailFragment"
+        android:label="Dettaglio Segnalazione">
+        <argument
+            android:name="reportId"
+            app:argType="integer" />
+    </fragment>
+</navigation>
